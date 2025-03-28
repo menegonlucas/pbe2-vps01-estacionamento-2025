@@ -73,7 +73,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ## Como eu fiz para que funcionasse?
   - Em resumo, usei códigos anteriores do Back-End fazendo as alterações principais, bem como utilizei códigos e instruções anteriores para o uso do Prisma e o funcionamento do projeto.
-  - Por favor, não desconsiderar meu esforço e minha conquista pq deu certo. obrigado!
+  - Por favor, não desmerecer meu esforço e minha conquista porque deu certo. Obrigado!
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
