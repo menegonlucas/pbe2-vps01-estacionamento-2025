@@ -46,7 +46,7 @@ collection:
           text: |+
             {
               "placa": "MNO-5566",
-              "proprietario": "Renata Lima",
+              "proprietario": "Gabriel Araujo",
               "tipo": "Hatch",
               "modelo": "Onix",
               "marca": "Chevrolet",
@@ -82,7 +82,7 @@ collection:
           text: |-
             	{
             		"placa": "ABC-1234",
-            		"proprietario": "João Silva",
+            		"proprietario": "Maria Caleffi",
             		"tipo": "Sedan",
             		"modelo": "Corollitta",
             		"marca": "Toyotita",
@@ -117,7 +117,7 @@ collection:
           text: |-
             {
               "placa": "MNO-5566",
-              "proprietario": "Renata Lima",
+              "proprietario": "Eloá Florencio",
               "tipo": "Hatch",
               "modelo": "Onix",
               "marca": "Chevrolet",
