@@ -1,0 +1,261 @@
+type: collection.insomnia.rest/5.0
+name: Estacionamento - VPS BACKEND - 28/03/25
+meta:
+  id: wrk_cb9c874158bb4df5b3dda87a7bc443da
+  created: 1743170608235
+  modified: 1743170608235
+collection:
+  - name: Automoveis
+    meta:
+      id: fld_7c3d96e71a5c4bf0af4bba5d0c58d402
+      created: 1743170620246
+      modified: 1743170620246
+      sortKey: -1743170620246
+    children:
+      - url: http://localhost:4000/automoveis
+        name: Read
+        meta:
+          id: req_40f9a02822384f45b3fc14664b9a6e6d
+          created: 1743170712170
+          modified: 1743171417658
+          isPrivate: false
+          sortKey: -1743170715695
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/automoveis
+        name: Create
+        meta:
+          id: req_b338d05f9b13457fa2bcbeedd7a7f7b3
+          created: 1743170731600
+          modified: 1743171603690
+          isPrivate: false
+          sortKey: -1742994299560
+        method: POST
+        body:
+          mimeType: application/json
+          text: |+
+            {
+              "placa": "MNO-5566",
+              "proprietario": "Renata Lima",
+              "tipo": "Hatch",
+              "modelo": "Onix",
+              "marca": "Chevrolet",
+              "cor": "Vermelho",
+              "ano": 2023,
+              "telefone": "7890-1234"
+            }
+
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/automoveis/ABC-1234
+        name: Update
+        meta:
+          id: req_70092d790a5e490fb7921f6f7fbcbbe1
+          created: 1743170750395
+          modified: 1743176523382
+          isPrivate: false
+          sortKey: -1742906091492.5
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            	{
+            		"placa": "ABC-1234",
+            		"proprietario": "João Silva",
+            		"tipo": "Sedan",
+            		"modelo": "Corollitta",
+            		"marca": "Toyotita",
+            		"cor": "Preto",
+            		"ano": 2020,
+            		"telefone": "1234-5678"
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/automoveis/MNO-5566
+        name: Delete
+        meta:
+          id: req_1dea0f3111f84fa8b1274c6f66502bc0
+          created: 1743170766946
+          modified: 1743171704695
+          isPrivate: false
+          sortKey: -1742861987458.75
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "placa": "MNO-5566",
+              "proprietario": "Renata Lima",
+              "tipo": "Hatch",
+              "modelo": "Onix",
+              "marca": "Chevrolet",
+              "cor": "Vermelho",
+              "ano": 2023,
+              "telefone": "7890-1234"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Estadia/Permanencia
+    meta:
+      id: fld_a0224add789f4368a73c30cc41a81bb4
+      created: 1743170861704
+      modified: 1743170861704
+      sortKey: -1742994033081.75
+    children:
+      - url: http://localhost:4000/estadias
+        name: Read
+        meta:
+          id: req_5202eff265f248e89f9698e884a9c857
+          created: 1743170861709
+          modified: 1743171858060
+          isPrivate: false
+          sortKey: -1743170715695
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/estadias
+        name: Create
+        meta:
+          id: req_d2d3ceab0178409393227b3df0566033
+          created: 1743170861713
+          modified: 1743177596008
+          isPrivate: false
+          sortKey: -1742994299560
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "placa": "ABC-1234",
+              "valorHora": 10.5
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/estadias/14
+        name: Update
+        meta:
+          id: req_53977159be9a4ce5a79288d90a4bade3
+          created: 1743170861717
+          modified: 1743177718593
+          isPrivate: false
+          sortKey: -1742906091492.5
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "saida": "2025-03-28T15:00:00.000Z"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4000/estadias/10
+        name: Delete
+        meta:
+          id: req_25abc48fa0084e47b14c3d5bb387e4d3
+          created: 1743170861721
+          modified: 1743172238425
+          isPrivate: false
+          sortKey: -1742861987458.75
+        method: DELETE
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_90d585e946218c2c908957ea89db02421b16cfeb
+    created: 1743170608246
+    modified: 1743170608246
+environments:
+  name: Base Environment
+  meta:
+    id: env_90d585e946218c2c908957ea89db02421b16cfeb
+    created: 1743170608239
+    modified: 1743170608239
+    isPrivate: false
